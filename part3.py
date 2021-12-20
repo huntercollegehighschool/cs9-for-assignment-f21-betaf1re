@@ -19,3 +19,31 @@ Enter the height: 3
 """
 
 #write your code here 
+length = int(input("Enter the length: "))
+width = int(input("Enter the width: "))
+print("\n")
+
+base = ""
+side = ""
+
+for n in range(length):
+  base += '*'
+  if n == 0 or n == length-1:
+    side += '*'
+  else:
+    side += ' '
+
+for n in range(width):
+  if n == 0 or n == width-1:
+    print(base)
+  else:
+    print(side)
+
+print('\n')
+
+#i didn't realize that you could just make a filled rectangle are you kidding me aaaa
+line = ""
+for n in range(length):
+  line += '*'
+for n in range(width):
+  print(line)
